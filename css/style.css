@@ -177,8 +177,7 @@ body {
 }
 
 @media  (width > 1023px) {
-    .content__item:nth-child(4),
-    .content__item:nth-child(5){
+    .content__item:nth-child(4){
         margin-top: 0;
     }
 }
