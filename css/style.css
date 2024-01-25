@@ -186,8 +186,19 @@ body {
 
 }
 
+@media (width > 1087px) {
+    .content__item{
+        width: 240px;
+    }
+}
+
 @media  (width > 1023px) {
-    .content__item:nth-child(4),
+    .content__item:nth-child(4){
+        margin-top: 0;
+    }
+}
+
+@media (width > 1353px) {
     .content__item:nth-child(5){
         margin-top: 0;
     }
