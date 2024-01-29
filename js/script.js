@@ -68,3 +68,4 @@ let resizeWrapper = function(){
   }
 };
 buttonMore.addEventListener("click", resizeWrapper);
+
