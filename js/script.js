@@ -2,15 +2,14 @@ window.addEventListener("DOMContentLoaded", () => {
   const resizableSwiper = (
     breakpoint,
     swiperClass,
-    swiperSettings,
-    callback
+    swiperSettings,    callback,
   ) => {
     let swiper;
 
     breakpoint = window.matchMedia(breakpoint);
 
     const enableSwiper = function (className, settings) {
-      swiper = new Swiper(className, settings);
+      swiper = new swiper(className, settings);
 
       if (callback) {
         callback(swiper);
@@ -43,20 +42,20 @@ window.addEventListener("DOMContentLoaded", () => {
         slidesPerView: 1.3,
       },
       360: {
-        slidesPerView: 1.5 
-        },
-      450:{ slidesPerView: 2,},
-      550:{ slidesPerView: 2.3,},
+        slidesPerView: 1.5,
+      },
+      450: { slidesPerView: 2 },
+      550: { slidesPerView: 2.3 },
       570: { slidesPerView: 2 },
-      650:{ slidesPerView: 2.8,},
-      700:{ slidesPerView: 4,}
+      650: { slidesPerView: 2.8 },
+      700: { slidesPerView: 4 },
     },
   });
 });
 
 const buttonMore = document.querySelector(".more");
 
-let resizeWrapper = function(){
+let resizeWrapper = function () {
   if (buttonMore.textContent == "Показать всё") {
     document.querySelector(".content__wrapper").classList.add("openMore");
     buttonMore.classList.add("more--up");
