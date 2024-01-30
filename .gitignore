@@ -1,3 +1,4 @@
 node_modules
 .prettierrc.json
 /package*
+.eslintrc.json

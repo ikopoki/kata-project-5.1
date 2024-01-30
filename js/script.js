@@ -4,12 +4,11 @@ window.addEventListener("DOMContentLoaded", () => {
     swiperClass,
     swiperSettings,    callback,
   ) => {
-    let swiper;
 
     breakpoint = window.matchMedia(breakpoint);
 
     const enableSwiper = function (className, settings) {
-      swiper = new swiper(className, settings);
+      new Swiper(className, settings);
 
       if (callback) {
         callback(swiper);
